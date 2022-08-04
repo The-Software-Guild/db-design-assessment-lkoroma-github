@@ -1,0 +1,25 @@
+The database will be used for grabbing information for cinema.
+It displays information about:
+    - employees
+    - cinema name/brand
+    - movies at the cinema currently
+    - distributors of said movies
+    - times/showings of those movies being sold to customers as tickets
+
+There will be 7 main tables in the database and 6 tables to connect the rest of the tables together.
+Main Tables:
+    - cinema: includes the cinema id and the name of the brand
+    - employee: information about the employees at the cinema
+    - phone: employee phone information
+    - movie: movies being shown at the cinema
+    - distributor: shows distributors for movies
+    - show: information about the day and time a movie is being shown
+    - room: the room the movie is being shown in and the amount of seats in the room
+
+Joiner Tables:
+    - cinemamovie: joins cinema and movie tables
+    - cinemaemployee: joins cinema and employee tables
+    - employeephone: joins employee and phone tables
+    - moviedistributor: joins movie and distributor tables
+    - movieshow: joins movie and show tables
+    - roomshow: joins room and show tables
